@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Plaid Sans";
+  src: url("/brand/fonts/PlaidSans-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Plaid Sans";
+  src: url("/brand/fonts/PlaidSans-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Plaid Sans";
+  src: url("/brand/fonts/PlaidSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Plaid Sans";
+  src: url("/brand/fonts/PlaidSans-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f8f3;
+  --foreground: #111112;
+  --plaid-black: #111112;
+  --plaid-ink: #01172e;
+  --plaid-deep-teal: #012e37;
+  --plaid-mint: #d8fef3;
+  --plaid-blue-sky: #cdf5fd;
+  --plaid-lime: #e8fed7;
+  --plaid-cyan: #42f0cd;
+  --plaid-blue: #0e94d8;
+  --plaid-purple: #5e5ed9;
+  --plaid-border: #d8dfdc;
+  --plaid-muted: #65716d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Plaid Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Plaid Sans", ui-monospace, SFMono-Regular, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a,
+select,
+input {
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(66, 240, 205, 0.55);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(216, 254, 243, 0.9);
 }
