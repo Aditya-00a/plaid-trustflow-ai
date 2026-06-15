@@ -33,11 +33,13 @@
 }
 
 :root {
-  --background: #f6f8f3;
+  --background: #ffffff;
   --foreground: #111112;
   --plaid-black: #111112;
   --plaid-ink: #01172e;
   --plaid-deep-teal: #012e37;
+  --plaid-ocean: #0a87b7;
+  --plaid-sky: #23c2d2;
   --plaid-mint: #d8fef3;
   --plaid-blue-sky: #cdf5fd;
   --plaid-lime: #e8fed7;
@@ -90,4 +92,34 @@ input:focus-visible {
 
 ::selection {
   background: rgba(216, 254, 243, 0.9);
+}
+
+.plaid-holographic-wash {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(66, 240, 205, 0.2), transparent 26rem),
+    radial-gradient(circle at 92% 4%, rgba(99, 218, 255, 0.28), transparent 24rem),
+    radial-gradient(circle at 72% 12%, rgba(255, 185, 238, 0.22), transparent 20rem),
+    linear-gradient(180deg, #e9fbfa 0%, #ffffff 34%, #f9fbf8 100%);
+}
+
+.plaid-guilloche {
+  background-image:
+    repeating-radial-gradient(
+      ellipse at 12% 38%,
+      rgba(216, 254, 243, 0.28) 0 1px,
+      transparent 1px 10px
+    ),
+    repeating-radial-gradient(
+      ellipse at 78% 42%,
+      rgba(1, 46, 55, 0.18) 0 1px,
+      transparent 1px 9px
+    ),
+    linear-gradient(115deg, #0074a8 0%, #0e94d8 44%, #42f0cd 100%);
+}
+
+.plaid-gradient-text {
+  background: linear-gradient(100deg, #42f0cd 0%, #d8fef3 48%, #ffffff 92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

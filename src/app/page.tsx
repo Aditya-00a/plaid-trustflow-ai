@@ -219,21 +219,22 @@ const navItems: Array<[Section, string]> = [
 function PlaidLogo() {
   return (
     <div className="flex items-center gap-3" aria-label="Plaid Asion AI">
-      <div className="grid h-9 w-9 grid-cols-3 grid-rows-3 gap-0.5 rounded-sm bg-[#111112] p-1">
-        {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((cell) => (
-          <span
-            key={cell}
-            className={`rounded-[1px] ${
-              [0, 2, 4, 6, 8].includes(cell) ? "bg-[#42f0cd]" : "bg-white"
-            }`}
-          />
-        ))}
-      </div>
+      <svg
+        height="29"
+        viewBox="0 0 77 29"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="Plaid"
+        className="h-[29px] w-[77px] text-[#232424]"
+      >
+        <g fill="currentColor" fillRule="evenodd">
+          <path d="M37.3252 14.9546H36.2239V12.5005H37.2135C38.4162 12.5005 39.0177 12.9124 39.0177 13.7353C39.0177 14.5484 38.4537 14.9546 37.3252 14.9546ZM40.3753 10.9121C39.7365 10.3878 38.6455 10.126 37.1019 10.126H33.6211V20.617H36.2239V17.33H37.3893C38.8052 17.33 39.8431 17.0256 40.5028 16.417C41.2475 15.7359 41.6206 14.8291 41.6206 13.6961C41.6206 12.5218 41.2058 11.5939 40.3753 10.9121ZM46.0756 10.1256H43.3611V20.6173H49.2216V18.2421H46.0758L46.0756 10.1256ZM54.5063 16.9683L55.6241 13.382L56.7254 16.9683H54.5063ZM54.538 10.1256L50.275 20.6173H53.197L53.7559 19.0919H57.46L57.9707 20.6173H60.9256L56.6937 10.1256H54.538ZM62.2824 20.6173H64.9969V10.1256H62.2824V20.6173ZM71.1922 18.2422H70.0263V12.5005H71.2081C72.0385 12.5005 72.6766 12.7536 73.1239 13.2592C73.5712 13.7654 73.7944 14.4828 73.7944 15.4101C73.7944 17.2986 72.9266 18.2422 71.1922 18.2422ZM75.5353 12.0917C75.1737 11.588 74.7422 11.1849 74.2424 10.8806C73.4221 10.3769 72.3043 10.125 70.8885 10.125H67.3119V20.6167H71.4956C73.0068 20.6167 74.2209 20.135 75.1363 19.1701C76.0517 18.2052 76.5091 16.9261 76.5091 15.3319C76.5089 14.0633 76.1842 12.9835 75.5353 12.0917Z" />
+          <path d="M25.7629 26.2628L28 17.5309L24.9691 14.5001L27.9999 11.4691L25.7628 2.73706L17.0309 0.5L14.0001 3.531L10.969 0.50014L2.23706 2.73734L0 11.4691L3.03128 14.4999L0.00014 17.531L2.2372 26.2629L10.9691 28.5L14.0001 25.469L17.031 28.4999L25.7629 26.2628ZM15.7321 23.7371L18.6186 20.8505L22.2912 24.5233L17.6956 25.7007L15.7321 23.7371ZM11.1136 9.88154L14.0003 6.99502L16.8868 9.8814L14.0001 12.7679L11.1136 9.88154ZM12.2682 14.5L9.38154 17.3865L6.49502 14.5L9.38154 11.6135L12.2682 14.5ZM18.6187 11.6133L21.5053 14.5L18.6186 17.3865L15.7321 14.5L18.6187 11.6133ZM16.8867 19.1186L14.0001 22.0051L11.1135 19.1185L14.0001 16.2319L16.8867 19.1186ZM10.3044 25.7007L5.70864 24.5233L9.38154 20.8504L12.2682 23.7371L10.3044 25.7007ZM4.76308 16.2319L7.6496 19.1185L3.9767 22.7914L2.7993 18.1957L4.76308 16.2319ZM3.9767 6.20836L7.64974 9.8814L4.76308 12.7681L2.7993 10.8041L3.9767 6.20836ZM12.2683 5.26294L9.38168 8.1496L5.70892 4.4767L10.3047 3.2993L12.2683 5.26294ZM17.6959 3.2993L22.2915 4.4767L18.6186 8.14946L15.7321 5.26294L17.6959 3.2993ZM23.2372 12.7681L20.3505 9.8814L24.0233 6.20878L25.2007 10.8046L23.2372 12.7681ZM24.0233 22.7914L20.3505 19.1186L23.2372 16.2321L25.2007 18.1957L24.0233 22.7914Z" />
+        </g>
+      </svg>
+      <div className="h-8 w-px bg-[#93aeb8]" aria-hidden />
       <div className="leading-none">
-        <div className="text-[28px] font-semibold text-[#111112]">
-          plaid<span className="text-[#0e94d8]">.asion.ai</span>
-        </div>
-        <p className="mt-1 text-xs font-semibold text-[#65716d]">
+        <div className="text-lg font-semibold text-[#012e37]">asion.ai</div>
+        <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#65716d]">
           TrustFlow AI
         </p>
       </div>
@@ -389,8 +390,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f6f8f3] text-[#111112]">
-      <div className="pointer-events-none fixed inset-0 opacity-70">
+    <main className="plaid-holographic-wash min-h-screen overflow-hidden text-[#111112]">
+      <div className="pointer-events-none fixed inset-0 opacity-55">
         <Image
           src="/brand/images/holographic-strip.webp"
           alt=""
@@ -399,11 +400,11 @@ export default function Home() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#f6f8f3]/80" />
+        <div className="absolute inset-0 bg-white/78" />
       </div>
 
-      <div className="relative mx-auto flex max-w-[1500px] flex-col px-4 py-5 sm:px-6 lg:px-8">
-        <header className="flex flex-col gap-5 border-b border-[#d8dfdc] pb-5 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative mx-auto flex max-w-[1500px] flex-col px-4 py-6 sm:px-6 lg:px-8">
+        <header className="mx-auto flex w-full max-w-[1180px] flex-col gap-4 rounded-full border border-[#bcd3dc] bg-[#d7edf7]/90 px-5 py-3 shadow-[0_20px_70px_rgba(1,23,46,0.12)] backdrop-blur md:flex-row md:items-center md:justify-between">
           <PlaidLogo />
           <nav className="flex flex-wrap gap-2" aria-label="Dashboard sections">
             {navItems.map(([label, detail]) => (
@@ -414,7 +415,7 @@ export default function Home() {
                 className={`rounded-full border px-4 py-2 text-sm font-semibold ${
                   activeSection === label
                     ? "border-[#111112] bg-[#111112] text-white"
-                    : "border-[#d8dfdc] bg-white/78 text-[#012e37] hover:border-[#0ba299]"
+                    : "border-transparent bg-transparent text-[#232424] hover:bg-white/55"
                 }`}
               >
                 {label}
@@ -432,29 +433,30 @@ export default function Home() {
 
         <section className="grid gap-5 py-6 xl:grid-cols-[minmax(0,1.55fr)_430px]">
           <div className="grid gap-5">
-            <section className="overflow-hidden rounded-[6px] border border-[#111112] bg-[#111112] text-white shadow-[0_24px_90px_rgba(1,23,46,0.18)]">
-              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_360px]">
-                <div className="p-6 sm:p-8">
-                  <Pill className="border-[#42f0cd] bg-[#012e37] text-[#d8fef3]">
+            <section className="plaid-guilloche relative overflow-hidden rounded-[2px] border border-[#012e37] text-white shadow-[0_24px_90px_rgba(1,23,46,0.18)]">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_22%,rgba(216,254,243,0.26),transparent_18rem)]" />
+              <div className="relative grid gap-0 lg:grid-cols-[minmax(0,1fr)_300px] 2xl:grid-cols-[minmax(0,1fr)_430px]">
+                <div className="p-6 sm:p-8 lg:p-10">
+                  <Pill className="border-[#d8fef3] bg-[#012e37]/80 text-[#d8fef3]">
                     Day 15 • Agentic payment risk copilot
                   </Pill>
-                  <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-[1.02] md:text-6xl">
-                    Decide when AI agents are allowed to move money.
+                  <h1 className="plaid-gradient-text mt-5 max-w-4xl text-4xl font-semibold leading-[1.02] md:text-6xl lg:text-[58px] 2xl:text-[76px]">
+                    Protect agentic payments with trusted data.
                   </h1>
-                  <p className="mt-5 max-w-2xl text-base leading-7 text-[#c8d3d0] md:text-lg">
-                    TrustFlow AI reviews AI-initiated wallet funding, bank
-                    payments, and account connections using identity, balance,
-                    ACH risk, consent, and agent permissions.
+                  <p className="mt-5 max-w-2xl text-base font-semibold leading-7 text-white md:text-lg">
+                    TrustFlow AI reviews AI-initiated pay-by-bank, wallet
+                    funding, and account connections using Plaid-style identity,
+                    Balance, Signal, consent, and Know Your Agent guardrails.
                   </p>
-                  <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                  <div className="mt-8 grid gap-3 sm:grid-cols-3">
                     {[
                       ["Identity", "verified owner"],
-                      ["Balance", "real-time check"],
-                      ["Signal", "return risk"],
+                      ["Balance", "real-time checks"],
+                      ["Signal", "payment risk"],
                     ].map(([label, value]) => (
                       <div
                         key={label}
-                        className="border border-white/15 bg-white/[0.06] px-4 py-3"
+                        className="border border-white/20 bg-[#00172e]/25 px-4 py-3 backdrop-blur"
                       >
                         <p className="text-xs font-semibold text-[#42f0cd]">
                           {label}
@@ -466,25 +468,25 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="relative min-h-[280px] border-t border-white/10 lg:border-l lg:border-t-0">
+                <div className="relative min-h-[340px] overflow-hidden border-t border-white/10 lg:border-l lg:border-t-0 2xl:min-h-[360px]">
                   <Image
-                    src="/brand/images/ai-agents-phone.webp"
-                    alt="Plaid AI agent illustration"
+                    src="/brand/images/plaid-home-hero.webp"
+                    alt="Plaid guilloche financial illustration"
                     fill
                     priority
-                    sizes="430px"
-                    className="object-cover"
+                    sizes="520px"
+                    className="object-contain object-bottom"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#111112]/75 via-transparent to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 border border-white/20 bg-[#012e37]/90 p-4 text-sm font-semibold text-[#d8fef3] backdrop-blur">
-                    KYA links the agent action back to a verified, accountable
-                    human identity.
+                  <div className="absolute inset-x-0 bottom-[72px] h-5 bg-[linear-gradient(90deg,#63daff,#e7b7ff,#d8fef3,#cdf5fd)] opacity-90" />
+                  <div className="absolute bottom-5 left-5 right-5 border border-white/20 bg-[#012e37]/92 p-4 text-sm font-semibold text-[#d8fef3] backdrop-blur">
+                    KYA links every agent action to a verified, accountable
+                    person or business.
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className="rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+            <section className="rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div>
                   <p className="text-sm font-semibold text-[#0ba299]">
@@ -497,7 +499,7 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={handleRunTrustFlowCheck}
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-[3px] bg-[#111112] px-4 text-sm font-semibold text-white hover:bg-[#012e37]"
+                  className="inline-flex h-11 items-center justify-center gap-2 rounded-[2px] bg-[#111112] px-4 text-sm font-semibold text-white hover:bg-[#012e37]"
                 >
                   <RefreshCcw className="h-4 w-4" aria-hidden />
                   Run TrustFlow check
@@ -516,7 +518,7 @@ export default function Home() {
                       key={request.id}
                       type="button"
                       onClick={() => handleSelectRequest(request.id)}
-                      className={`grid gap-4 rounded-[4px] border p-4 text-left md:grid-cols-[1fr_130px_110px_150px] md:items-center ${
+                      className={`grid gap-4 rounded-[2px] border p-4 text-left md:grid-cols-[1fr_130px_110px_150px] md:items-center ${
                         active
                           ? "border-[#111112] bg-[#effffa] shadow-[8px_8px_0_#111112]"
                           : "border-[#d8dfdc] bg-white hover:border-[#0ba299]"
@@ -556,7 +558,7 @@ export default function Home() {
             </section>
 
             <section className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]">
-              <div className="rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+              <div className="rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-sm font-semibold text-[#0ba299]">
@@ -569,7 +571,7 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={handleToggleProfile}
-                    className="inline-flex h-10 items-center gap-2 rounded-[3px] border border-[#111112] px-3 text-sm font-semibold hover:bg-[#111112] hover:text-white"
+                    className="inline-flex h-10 items-center gap-2 rounded-[2px] border border-[#111112] px-3 text-sm font-semibold hover:bg-[#111112] hover:text-white"
                   >
                     <UserRoundCheck className="h-4 w-4" aria-hidden />
                     {profileOpen ? "Collapse" : "Open profile"}
@@ -590,7 +592,7 @@ export default function Home() {
                       return (
                         <div
                           key={label as string}
-                          className="border border-[#d8dfdc] bg-[#f6f8f3] p-4"
+                          className="border border-[#d8dfdc] bg-[#f8fbf6] p-4"
                         >
                           <TypedIcon
                             className="h-5 w-5 text-[#0ba299]"
@@ -607,14 +609,14 @@ export default function Home() {
                     })}
                   </div>
                 ) : (
-                  <p className="mt-5 border border-[#d8dfdc] bg-[#f6f8f3] p-4 text-sm font-semibold text-[#65716d]">
+                  <p className="mt-5 border border-[#d8dfdc] bg-[#f8fbf6] p-4 text-sm font-semibold text-[#65716d]">
                     Profile hidden. Open it to view owner, account, limit, and
                     consent evidence.
                   </p>
                 )}
               </div>
 
-              <div className={`rounded-[6px] border p-5 ${decision.panel}`}>
+              <div className={`rounded-[2px] border p-5 ${decision.panel}`}>
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-sm font-semibold text-[#65716d]">
@@ -644,7 +646,7 @@ export default function Home() {
                         key={decisionValue}
                         type="button"
                         onClick={() => handleDecision(decisionValue)}
-                        className={`h-11 rounded-[3px] border px-3 text-sm font-semibold ${
+                        className={`h-11 rounded-[2px] border px-3 text-sm font-semibold ${
                           currentDecision === decisionValue
                             ? "border-[#111112] bg-[#111112] text-white"
                             : "border-[#d8dfdc] bg-white text-[#111112] hover:border-[#0ba299]"
@@ -660,7 +662,7 @@ export default function Home() {
           </div>
 
           <aside className="grid content-start gap-5">
-            <section className="self-start rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+            <section className="self-start rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <p className="text-sm font-semibold text-[#0ba299]">
@@ -677,7 +679,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="self-start rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+            <section className="self-start rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Risk drivers</h2>
                 <Gauge className="h-5 w-5 text-[#0ba299]" aria-hidden />
@@ -695,13 +697,13 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="self-start rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+            <section className="self-start rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
               <h2 className="text-lg font-semibold">Signal checks</h2>
               <div className="mt-4 grid gap-2">
                 {activeRequest.checks.map((check) => (
                   <div
                     key={check.label}
-                    className="flex items-center justify-between border border-[#d8dfdc] bg-[#f6f8f3] px-3 py-2"
+                    className="flex items-center justify-between border border-[#d8dfdc] bg-[#f8fbf6] px-3 py-2"
                   >
                     <span className="text-sm font-semibold text-[#65716d]">
                       {check.label}
@@ -722,7 +724,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="self-start overflow-hidden rounded-[6px] border border-[#111112] bg-[#01172e] text-white shadow-[0_20px_70px_rgba(1,23,46,0.16)]">
+            <section className="self-start overflow-hidden rounded-[2px] border border-[#111112] bg-[#01172e] text-white shadow-[0_20px_70px_rgba(1,23,46,0.16)]">
               <div className="relative h-24">
                 <Image
                   src="/brand/images/tail-holo-strip.webp"
@@ -749,7 +751,7 @@ export default function Home() {
         </section>
 
         <section className="grid gap-5 pb-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-          <div className="rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+          <div className="rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className="text-sm font-semibold text-[#0ba299]">
@@ -776,7 +778,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-[6px] border border-[#d8dfdc] bg-white/88 p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
+          <div className="rounded-[2px] border border-[#d8dfdc] bg-white p-5 shadow-[0_20px_70px_rgba(1,23,46,0.08)]">
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="text-sm font-semibold text-[#0ba299]">
@@ -789,7 +791,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleExportAudit}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-[3px] bg-[#111112] px-4 text-sm font-semibold text-white hover:bg-[#012e37]"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[2px] bg-[#111112] px-4 text-sm font-semibold text-white hover:bg-[#012e37]"
               >
                 <Download className="h-4 w-4" aria-hidden />
                 Export audit packet
@@ -799,7 +801,7 @@ export default function Home() {
               {activeRequest.timeline.map((event, index) => (
                 <div
                   key={event}
-                  className="border border-[#d8dfdc] bg-[#f6f8f3] p-4"
+                  className="border border-[#d8dfdc] bg-[#f8fbf6] p-4"
                 >
                   <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#111112] text-sm font-semibold text-white">
                     {index + 1}
@@ -831,7 +833,7 @@ export default function Home() {
             return (
               <div
                 key={title as string}
-                className="border border-[#d8dfdc] bg-white/80 p-4"
+                className="border border-[#d8dfdc] bg-white p-4"
               >
                 <TypedIcon className="h-6 w-6 text-[#0ba299]" aria-hidden />
                 <h3 className="mt-4 text-lg font-semibold">{title as string}</h3>
